@@ -1,0 +1,245 @@
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Noto Sans KR', sans-serif;
+
+
+$color-primary:#1A1A1A;
+$color-secondary: #FFFFFF;
+$color-orange: #ea4913;
+
+$body-font-size: 1rem;
+$body-font-weight: 400;
+
+
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: $font-primary;
+    color: $color-secondary;
+    font-size: 62.5%;
+    font-weight: $body-font-weight;
+    scroll-behavior: smooth;
+}
+  
+h1{
+    font-size: 17.15rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    text-align: center;
+    -webkit-text-stroke: 3px #111;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 0.54;
+    letter-spacing: normal;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    letter-spacing: .45rem;
+}
+h4{
+    font-family: $font-secondary;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 2rem;
+    font-weight:bold;
+    line-height:2.5rem;
+    text-transform: uppercase;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    color: $color-secondary;
+    text-decoration: none;
+}
+button{
+
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border:none;
+  
+}
+input{
+}
+
+.container{
+
+}
+
+//------------------------------------------nav--------------------------------
+.nav{
+    background-color:$color-primary;
+    padding: 2.7rem 9.7rem;
+    &__container{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    &__logo{
+        width: 22.6rem;
+        height: 2.6rem;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        >:not(:last-child){
+            margin-right: 7.6rem;
+        }
+    }
+    &__item{
+        text-transform: uppercase;
+        font-size:  1.4rem;
+    }
+    &__login{
+        border-left: 1px solid $color-secondary;
+        padding-left:4.4rem;
+    }
+}
+
+
+//------------------------------------------header--------------------------------
+
+.header{
+    background-color: $color-orange;
+    padding: 12rem 0rem;
+    &__title{
+        color: $color-primary;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__heading{
+        margin: 9.1rem 10rem;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $color-primary;
+        &--button{
+            border: 3px solid $color-primary;
+            border-radius: 2.55rem;
+            padding:1.2rem 3.6rem;
+            font-size: 2rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-transform: uppercase;
+        }
+        &--arrow{
+            font-size: 6.4rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.75;
+            letter-spacing: normal;
+        }
+        &--mid{
+            padding: 1.8rem;
+            width: 13.4rem;
+            border-top: 4px solid $color-primary;
+            border-bottom:4px solid $color-primary;
+            margin: 0rem 12rem;
+            font-weight: 800;
+        }
+        :first-child{
+            margin-right: 11.3rem;
+        }
+        :last-child{
+            margin-left: 11.3rem;
+        }
+    }
+}
+
+
+
+
+
+//------------------------------------------introduction--------------------------------
+.intro{
+    background: url(../src/assets/introduction-bg.png);
+}
+
+
+
+
+
+//------------------------------------------features--------------------------------
+
+
+
+
+
+//------------------------------------------services--------------------------------
+
+
+
+
+
+
+
+//------------------------------------------footer--------------------------------
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------responsive--------------------------------
+
+@media only screen and (max-width:70em){
+    html{
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width:69em){
+    html{
+        font-size: 45%;
+    }
+}
+ 
+@media only screen and (max-width:52em){
+    html{
+        font-size: 40%;
+    }
+}   
+
+@media only screen and (max-width:42em){
+    html{
+        font-size: 25%;
+    }     
+}
+
+
+@media only screen and (max-width:25em){
+    html{
+        font-size: 20%;
+    }
+}
+

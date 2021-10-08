@@ -1,13 +1,219 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-size: 62.5%;
+  font-weight: 400;
+  scroll-behavior: smooth;
 }
+
+h1 {
+  font-size: 17.15rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  text-align: center;
+  -webkit-text-stroke: 3px #111;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 0.54;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 6rem;
+  letter-spacing: .45rem;
+}
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.nav {
+  background-color: #1A1A1A;
+  padding: 2.7rem 9.7rem;
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo {
+  width: 22.6rem;
+  height: 2.6rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list > :not(:last-child) {
+  margin-right: 7.6rem;
+}
+
+.nav__item {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.nav__login {
+  border-left: 1px solid #FFFFFF;
+  padding-left: 4.4rem;
+}
+
+.header {
+  background-color: #ea4913;
+  padding: 12rem 0rem;
+}
+
+.header__title {
+  color: #1A1A1A;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__heading {
+  margin: 9.1rem 10rem;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #1A1A1A;
+}
+
+.header__nav--button {
+  border: 3px solid #1A1A1A;
+  border-radius: 2.55rem;
+  padding: 1.2rem 3.6rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.header__nav--arrow {
+  font-size: 6.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+}
+
+.header__nav--mid {
+  padding: 1.8rem;
+  width: 13.4rem;
+  border-top: 4px solid #1A1A1A;
+  border-bottom: 4px solid #1A1A1A;
+  margin: 0rem 12rem;
+  font-weight: 800;
+}
+
+.header__nav :first-child {
+  margin-right: 11.3rem;
+}
+
+.header__nav :last-child {
+  margin-left: 11.3rem;
+}
+
+.intro {
+  background: url(../src/assets/introduction-bg.png);
+}
+
+@media only screen and (max-width: 70em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 69em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (max-width: 52em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 20%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
