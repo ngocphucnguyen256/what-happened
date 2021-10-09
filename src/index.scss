@@ -30,7 +30,7 @@ body{
 }
   
 h1{
-    font-size: 17.15rem;
+    font-size: 15rem;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -136,9 +136,25 @@ button{
         font-style: italic;
     }
     &__heading{
-        margin: 9.1rem 10rem;
+        margin: 9.1rem 0rem;
+        text-shadow: 0rem 1rem $color-primary;
+    }
+    &__star{
         position: relative;
-        text-shadow: 1rem 1rem $color-primary;
+        &::before{
+            position:absolute;
+            width: 14rem;
+            height: 14rem;
+            content: "";
+            background-color:$color-yellow;
+            clip-path: polygon(49% 1%, 62% 31%, 77% 16%, 72% 37%, 85% 30%, 79% 44%, 98% 46%, 80% 56%, 88% 68%, 74% 67%, 79% 79%, 65% 75%, 58% 95%, 51% 77%, 38% 84%, 41% 69%, 28% 72%, 34% 59%, 3% 56%, 32% 47%, 15% 37%, 34% 38%, 26% 25%, 43% 29%);
+            left: -15rem;
+            bottom:0rem;
+        }
+    }
+    &__triangle{
+        margin-right: 15rem;
+        position: relative;
     }
     &__triangle::after{
         content: "";
@@ -148,37 +164,55 @@ button{
         border-left: 8rem solid transparent; 
         border-right: 8rem solid transparent; 
         position:absolute;
+        right: -15.5rem;
     }
     &__bubble{
-        color: $color-primary;
-        font-style: italic;
-        padding:3rem 8.2rem 3rem 5rem;
-        background:$color-blue;
         position:relative;
-        border-radius:20%;
-        -moz-boder-radius:20%;
-        -webkit-border-radius:20%;
+            &::before{
+                content: "!!!!!";
+                color: $color-primary;
+                font-style: italic;
+                padding:2rem 8.2rem 2rem 5rem;
+                background:$color-blue;
+                border-radius:8rem;
+                border: solid 3px #020001;
+                position:absolute;
+                right: -37rem;
+                top: -5rem;
+                text-shadow: none;
+            }
+            &::after{
+                content:'';
+                position:absolute;
+                width:0;
+                height:0;
+                border-top:5rem  solid  $color-blue;
+                border-right:5rem  solid  transparent;
+                bottom:2rem;
+                right: -10rem;
+            }
     }
-    &__bubble::after{
-        content:'';
-        position:absolute;
-        width:0;
-        height:0;
-        border-top:20px  solid  $color-blue;
-        border-right:20px  solid  transparent;
-        top:50px;
-        right:80%
-    }
+
+ 
     &__thirsties{
-        position:absolute;
-        font-size: 43.5px;
-        font-weight: 800;
-        font-stretch: normal;
-        font-style: italic;
-        line-height: 0.39;
-        letter-spacing: normal;
-        border: solid 3px #020001;
-        background-color: $color-blue;
+        position: relative;
+        &::after{
+            content:"thirties";
+            position:absolute;
+            font-size: 4.35rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: italic;
+            line-height: 0.39;
+            letter-spacing: normal;
+            background-color: $color-blue;
+            padding:13rem 5rem;
+            text-shadow: none;
+            clip-path: polygon(5% 55%, 0% 50%, 12% 48%, 8% 33%, 20% 43%, 27% 33%, 32% 44%, 38% 34%, 41% 44%, 50% 34%, 52% 46%, 62% 34%, 62% 47%, 74% 33%, 76% 49%, 83% 38%, 86% 50%, 95% 41%, 95% 52%, 98% 61%, 90% 62%, 90% 70%, 81% 69%, 81% 76%, 70% 70%, 66% 78%, 60% 69%, 51% 80%, 49% 70%, 39% 80%, 38% 70%, 23% 80%, 27% 68%, 13% 77%, 14% 66%, 3% 67%);
+            top: -15rem;
+            right: -18rem;
+            transform: rotate(-15deg);
+        }
     }
     &__nav{
         display: flex;
@@ -402,6 +436,7 @@ button{
         margin-bottom: 4rem;
     }
     &__desc{
+        position: relative;
         color : $color-yellow;
         font-size: 16px;
         font-weight: 300;
@@ -792,7 +827,11 @@ button{
     }
     .productlist__container{
         grid-template-columns: repeat(3,1fr);
-    }     
+    } 
+    .story__desc{
+        margin: 0rem  10rem 10rem 10rem ;
+        z-index: 99;
+    }    
 }
 
 
