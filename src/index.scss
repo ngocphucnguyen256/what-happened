@@ -5,8 +5,11 @@ $font-secondary: 'Noto Sans KR', sans-serif;
 $color-primary:#1A1A1A;
 $color-secondary: #FFFFFF;
 $color-orange: #ea4913;
+$color-light-orange:#f96400;
+$color-blue: #0565bb;
+$color-yellow: #fcd32a;
 
-$body-font-size: 1rem;
+$body-font-size: 1.6rem;
 $body-font-weight: 400;
 
 
@@ -20,6 +23,10 @@ html{
     font-size: 62.5%;
     font-weight: $body-font-weight;
     scroll-behavior: smooth;
+}
+body{
+    margin-bottom: 10rem;
+    font-size:$body-font-size;
 }
   
 h1{
@@ -38,9 +45,9 @@ h2{
     font-size: 5rem;
     font-weight: 800;
     font-stretch: normal;
-    font-style: italic;
     line-height: 0.54;
     letter-spacing: normal;
+    text-transform: uppercase;
 }
 
 h3{
@@ -79,11 +86,11 @@ button{
     border:none;
   
 }
-input{
-}
+
 
 .container{
-
+    padding-left: 17.5rem;
+    padding-right: 17.5rem;
 }
 
 //------------------------------------------nav--------------------------------
@@ -125,7 +132,7 @@ input{
     &__title{
         color: $color-primary;
         text-align: center;
-        text-transform: uppercase;
+        font-style: italic;
     }
     &__heading{
         margin: 9.1rem 10rem;
@@ -180,31 +187,362 @@ input{
 //------------------------------------------introduction--------------------------------
 .intro{
     background: url(../src/assets/introduction-bg.png);
+    padding-top: 17.5rem;
+    padding-bottom: 17.5rem;
+
+    &__heading{
+        margin-bottom: 6rem;
+    }
+    &__desc{
+        font-size: 2rem;
+        line-height: 1.75;
+        width:66.7rem;
+    }
 }
 
 
 
 
 
-//------------------------------------------features--------------------------------
+//------------------------------------------product--------------------------------
+.product{
+    background : url(../src/assets/bes-bg.png);
+    padding-top:15rem;
+    padding-bottom: 20rem; 
+    &__heading{
+        text-align:center;
+        margin-bottom: 5rem;
+        color: $color-light-orange;
+    }
+    &__desc{
+        color: $color-light-orange;
+        text-align: center;
+        margin: 0rem 20rem 7.5rem;
+        font-size:2rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        width: 52.3rem;
+        position: relative;
+        &--icon{
+            position: absolute;
+            top: -4rem;
+            left: 0rem;
+            width:9rem;
+            height: 9rem;
+        }
+        &--desc{
+            position: absolute;
+            bottom: -4rem;
+            left: 7rem;
+            right: 7rem;
+            display: flex;
+            align-items: center;
+            padding: .7rem .8rem .6rem 2.7rem;
+            background: $color-secondary;
+            border: solid 3px #020001;
+            >img{
+                width:6.5rem;
+                height:6.5rem;
+            }
+            >p{
+                font-size:2rem;
+                font-weight: 800;
+                color: $color-primary;
+                margin-right: 2rem;
+            }
+           
+        }
+    }
+}
+
+
+
+
+//----------------------------------product list----------------------------------------
+.productlist{
+    &__container {
+        margin-top: 14.2rem;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 7.2rem 1.8rem ;
+    }
+   &__button{
+       margin-top: 11.6rem;
+       margin-bottom: 14.3rem;
+        display: flex;
+        justify-content: center;
+   }
+
+}
+//----------------------------------see more btn----------------------------------------
+.seemore{
+    width: 20rem;
+    height: 6rem;
+    border: solid 3px #020001;
+    background-color: transparent;
+    font-size: 2.3rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+
+
+
+//----------------------------------product card----------------------------------------
+.productcard{
+    color: $color-primary;
+  
+    &__title{
+        font-size:1.8rem;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.94;
+        letter-spacing: normal;
+        margin-top: 2.9rem;
+        margin-bottom: 2.9rem;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content:space-between;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.19;
+        letter-spacing: normal;
+        text-align: left;
+        &--right{
+            display: flex;
+            align-items:center;
+        }
+        &--icon{
+            width:2rem;
+            height:2rem;
+            margin-right: .7rem;
+        }
+
+    }
+}
 
 
 
 
 
-//------------------------------------------services--------------------------------
+
+//------------------------------------------story--------------------------------
+.story{
+    background: $color-blue;
+    padding-top: 15rem;
+    padding-bottom:17rem;
+    &__heading{
+        color: $color-yellow;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    &__desc{
+        color : $color-yellow;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        margin: 0rem 40rem 10rem 40rem;
+        text-align: center;
+
+    }
+    &__main{
+        width: 123.5rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content:center;
+      
+        >div{
+            width: 50%;
+            height: 41.8rem;
+        }
+        &--right{
+            color: $color-primary;
+            background: $color-secondary;
+            padding-left: 4.5rem;
+            padding-right: 4.5rem;
+        }
+        &--heading{
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.4;
+            letter-spacing: normal;
+            margin-top: 3.5rem;
+            margin-bottom: 3rem;
+
+        }
+        &--desc{
+            font-size: 1.6rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            letter-spacing: normal;
+            text-align: left;
+            color: #222;
+            margin-bottom: 3rem;
+        }
+        &--button{
+            margin-bottom: 7.5rem;
+        }
+    }
+}
+
+//------------------------------------------issue--------------------------------
+.issue{
+    background-color: $color-yellow;
+    color: $color-primary;
+    padding: 16rem 0rem 14rem 0rem;
+    text-align: center;
+    &__heading{
+        margin-bottom: 4rem;
+        font-weight: bold;
+    }
+    &__desc{
+        margin-bottom: 5.5rem;
+        padding: 0 40rem 0 40rem;
+    }
+    &__button{
+        margin-bottom: 12.8rem;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        text-transform: uppercase;
+        &--big--heading{
+            margin-top: 3rem;
+            font-size: 5.5rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.04;
+            letter-spacing: normal;
+            text-align: center;
+        }
+        &--arrow{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width:15rem;
+            height: 15rem;
+        }
+        &--heading{
+            font-size: 3rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: center;
+            background-color: $color-primary;
+            color: $color-secondary;
+        }
+
+    }
+}
+
+.orange{
+    background-color: $color-orange;
+}
 
 
 
-
-
-
-
+//------------------------------------------video--------------------------------
+.video{
+    text-align: center;
+    color: $color-primary;
+    padding: 14.8rem 0 40rem 0 ;
+    &__heading{
+        margin-bottom: 5rem;
+    }
+    &__desc{
+        margin: 0 40rem 5.3rem 40rem;
+        font-size: 2rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+    }
+    &__button{
+        margin-bottom: 7.2rem;
+    }
+    &__img{
+        width: 125.1rem;
+    }
+}
 //------------------------------------------footer--------------------------------
+.footer{
+    color: $color-primary;
+    &__container{
+        margin-left: 17.5rem;
+        margin-right: 17.5rem;
+        padding-top:5rem;
+        padding-bottom:6rem;
+        display: flex;
+        justify-content:space-between;
+        border-top: 1px  solid #f4f4f4;
+        border-bottom: 1px  solid #f4f4f4;
 
+    }
+    &__left{
+        width:23.5rem;
+    }
+    &__right{
+        margin-left: auto;
+        display: flex;
+        >div{
+            width:10rem;
+        }
+        >:not(:last-child){
+            margin-right: 5rem;
+        }
+    }
+    &__heading{
+        margin-bottom: 3.1rem;
+    }
+    &__copyright{
+        display: flex;
+        justify-content: space-between;
+        margin: 2.2rem  17.5rem 11.3rem 17.5rem; 
+        &--text{
+            width:65rem;
 
-
-
+        }
+        &--list{
+            display: flex;
+            >:not(:last-child){
+                margin-right:2.3rem;
+            }
+        }
+        &--icon{
+            width:2.4rem;
+            height:2.4rem;
+        }
+    }
+}
 
 
 
