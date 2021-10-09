@@ -599,6 +599,7 @@ button {
   padding: 16rem 0rem 14rem 0rem;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .issue__heading {

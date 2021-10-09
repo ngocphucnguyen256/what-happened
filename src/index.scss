@@ -555,6 +555,7 @@ button{
     padding: 16rem 0rem 14rem 0rem;
     text-align: center;
     position: relative;
+    overflow: hidden;
     &__heading{
         margin-bottom: 4rem;
         font-weight: bold;
