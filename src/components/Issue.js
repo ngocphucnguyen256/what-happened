@@ -1,6 +1,13 @@
 import SeeMoreBtn  from "./SeeMoreBtn"
 import arrow from '../assets/news-img-01.png'
-import newsImg2 from '../assets/news-img-03.png'
+import newsImg3 from '../assets/news-img-03.png'
+import newsImg4 from '../assets/news-img-04.png'
+import newsImg5 from '../assets/news-img-05.png'
+import newsOject1 from '../assets/news-object-01.png'
+import newsOject2 from '../assets/news-object-02.png'
+import newsOject3 from '../assets/news-object-03.png'
+import newsOject4 from '../assets/news-object-04.png'
+import newsOject5 from '../assets/news-object-05.png'
 
 
 const Issue =()=>{
@@ -25,33 +32,42 @@ const Issue =()=>{
 issue
 </p>                    
                             <img className="issue__item--arrow" src={arrow} alt='arrow'/>
+            <img className="issue__object--3" src={newsOject3} alt='newsObject'/>
+
                         </div>
                         <div className="issue__item">
                             <div className="issue__item--heading">b brand</div>
                             <div className="issue__item--img">
-                                <img src={newsImg2} alt='newsImage'/>
+                                <img src={newsImg3} alt='newsImage'/>
                             </div>
+                            <img className="issue__object--4" src={newsOject4} alt='newsObject'/>
+
                         </div>
                         <div className="issue__item">
                             <div className="issue__item--heading">b brand</div>
                             <div className="issue__item--img">
-                                <img src={newsImg2} alt='newsImage'/>
+                                <img src={newsImg3} alt='newsImage'/>
                             </div>
                         </div>
                         <div className="issue__item">
                             <div className="issue__item--heading orange">b brand</div>
                             <div className="issue__item--img">
-                                <img src={newsImg2} alt='newsImage'/>
+                                <img src={newsImg4} alt='newsImage'/>
                             </div>
                         </div>
                         <div className="issue__item">
                             <div className="issue__item--heading">b brand</div>
                             <div className="issue__item--img">
-                                <img src={newsImg2} alt='newsImage'/>
+                                <img src={newsImg5} alt='newsImage'/>
                             </div>
+                            <img className="issue__object--5" src={newsOject5} alt='newsObject'/>
+
                         </div>
                     </div>
             </div>
+            <img className="issue__object--1" src={newsOject1} alt='newsObject'/>
+            <img className="issue__object--2" src={newsOject2} alt='newsObject'/>
+
         </div>
     )
 }

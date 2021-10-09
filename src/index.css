@@ -24,7 +24,7 @@ h1 {
   line-height: 1.03;
   letter-spacing: normal;
   text-align: center;
-  -webkit-text-stroke: 3px #111;
+  -webkit-text-stroke: .4rem #111;
   text-transform: uppercase;
 }
 
@@ -82,7 +82,7 @@ button {
 
 .nav {
   background-color: #1A1A1A;
-  padding: 2.7rem 9.7rem;
+  padding: 2.7rem 9rem;
 }
 
 .nav__container {
@@ -112,7 +112,7 @@ button {
 }
 
 .nav__list > :not(:last-child) {
-  margin-right: 7.6rem;
+  margin-right: 5rem;
 }
 
 .nav__item {
@@ -138,6 +138,40 @@ button {
 
 .header__heading {
   margin: 9.1rem 10rem;
+  position: relative;
+  text-shadow: 1rem 1rem #1A1A1A;
+}
+
+.header__triangle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 16rem solid #fcd32a;
+  border-left: 8rem solid transparent;
+  border-right: 8rem solid transparent;
+  position: absolute;
+}
+
+.header__bubble {
+  color: #1A1A1A;
+  font-style: italic;
+  padding: 3rem 8.2rem 3rem 5rem;
+  background: #0565bb;
+  position: relative;
+  border-radius: 20%;
+  -moz-boder-radius: 20%;
+  -webkit-border-radius: 20%;
+}
+
+.header__bubble::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #0565bb;
+  border-right: 20px  solid  transparent;
+  top: 50px;
+  right: 80%;
 }
 
 .header__nav {
@@ -260,8 +294,8 @@ button {
 .product__item--desc {
   position: absolute;
   bottom: -4rem;
-  left: 7rem;
-  right: 7rem;
+  left: 6rem;
+  right: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +313,7 @@ button {
 }
 
 .product__item--desc > p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #1A1A1A;
   margin-right: 2rem;
@@ -334,6 +368,10 @@ button {
   margin-bottom: 2.9rem;
 }
 
+.productcard__img {
+  max-height: 21rem;
+}
+
 .productcard__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,6 +407,7 @@ button {
   background: #0565bb;
   padding-top: 15rem;
   padding-bottom: 17rem;
+  position: relative;
 }
 
 .story__heading {
@@ -390,7 +429,7 @@ button {
 }
 
 .story__main {
-  width: 123.5rem;
+  width: 110rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,11 +437,13 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 99;
 }
 
 .story__main > div {
   width: 50%;
-  height: 41.8rem;
+  height: 37.5rem;
 }
 
 .story__main--right {
@@ -419,8 +460,8 @@ button {
   font-style: normal;
   line-height: 2.4;
   letter-spacing: normal;
-  margin-top: 3.5rem;
-  margin-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .story__main--desc {
@@ -432,11 +473,69 @@ button {
   letter-spacing: normal;
   text-align: left;
   color: #222;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .story__main--button {
   margin-bottom: 7.5rem;
+}
+
+.story__object--1 {
+  width: 18rem;
+  height: 20rem;
+  position: absolute;
+  top: 20rem;
+  left: 14rem;
+}
+
+.story__object--2 {
+  width: 14.7rem;
+  height: 13.4rem;
+  position: absolute;
+  top: 6rem;
+  right: 20rem;
+}
+
+.story__object--3 {
+  width: 14.7rem;
+  height: 18.6rem;
+  position: absolute;
+  top: 9rem;
+  right: 14rem;
+  z-index: 10;
+}
+
+.story__object--4 {
+  width: 28rem;
+  height: 45rem;
+  position: absolute;
+  top: 19rem;
+  right: -10rem;
+}
+
+.story__object--5 {
+  width: 21rem;
+  height: 15rem;
+  position: absolute;
+  top: 58rem;
+  right: 0rem;
+  z-index: 10;
+}
+
+.story__object--6 {
+  width: 14rem;
+  height: 33rem;
+  position: absolute;
+  left: 0;
+  top: 41rem;
+}
+
+.story__object--7 {
+  width: 10rem;
+  height: 15rem;
+  left: 14rem;
+  bottom: 20rem;
+  position: absolute;
 }
 
 .issue {
@@ -444,6 +543,7 @@ button {
   color: #1A1A1A;
   padding: 16rem 0rem 14rem 0rem;
   text-align: center;
+  position: relative;
 }
 
 .issue__heading {
@@ -467,6 +567,7 @@ button {
 }
 
 .issue__item {
+  position: relative;
   text-transform: uppercase;
 }
 
@@ -500,6 +601,49 @@ button {
   color: #FFFFFF;
 }
 
+.issue__object--1 {
+  position: absolute;
+  width: 9.5rem;
+  height: 9.5rem;
+  top: 4.3rem;
+  right: 7rem;
+}
+
+.issue__object--2 {
+  position: absolute;
+  width: 12rem;
+  height: 11rem;
+  top: 16rem;
+  right: 7rem;
+}
+
+.issue__object--3 {
+  position: absolute;
+  z-index: 99;
+  width: 14rem;
+  height: 14rem;
+  bottom: -9rem;
+  right: -1rem;
+}
+
+.issue__object--4 {
+  position: absolute;
+  z-index: 99;
+  width: 10rem;
+  height: 5rem;
+  top: -2.7rem;
+  left: 2rem;
+}
+
+.issue__object--5 {
+  position: absolute;
+  z-index: 99;
+  width: 12rem;
+  height: 9rem;
+  bottom: -5rem;
+  left: -8rem;
+}
+
 .orange {
   background-color: #ea4913;
 }
@@ -508,6 +652,7 @@ button {
   text-align: center;
   color: #1A1A1A;
   padding: 14.8rem 0 40rem 0;
+  position: relative;
 }
 
 .video__heading {
@@ -529,7 +674,85 @@ button {
 }
 
 .video__img {
-  width: 125.1rem;
+  width: 110rem;
+}
+
+.video__object--1 {
+  position: absolute;
+  width: 40rem;
+  height: 20rem;
+  z-index: 99;
+  left: 23rem;
+  bottom: 14.6rem;
+}
+
+.video__object--2 {
+  position: absolute;
+  width: 9rem;
+  height: 8rem;
+  right: 50rem;
+  bottom: 27rem;
+}
+
+.video__object--3 {
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  z-index: -1;
+  left: 13rem;
+  bottom: 30rem;
+}
+
+.video__object--4 {
+  position: absolute;
+  width: 40rem;
+  height: 35rem;
+  left: -22rem;
+  top: 31rem;
+}
+
+.video__object--5 {
+  position: absolute;
+  width: 14rem;
+  height: 11rem;
+  left: 22rem;
+  top: 0rem;
+  z-index: -1;
+}
+
+.video__object--6 {
+  width: 13rem;
+  height: 13rem;
+  position: absolute;
+  top: 27rem;
+  right: 24rem;
+  z-index: 99;
+}
+
+.video__object--7 {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 15rem;
+  right: 13rem;
+}
+
+.video__object--8 {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  bottom: 24rem;
+  right: -13rem;
+  z-index: -1;
+}
+
+.video__object--9 {
+  width: 30rem;
+  height: 37rem;
+  position: absolute;
+  bottom: 53rem;
+  right: -15rem;
+  z-index: -2;
 }
 
 .footer {

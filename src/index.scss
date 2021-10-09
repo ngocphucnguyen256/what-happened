@@ -37,7 +37,7 @@ h1{
     line-height: 1.03;
     letter-spacing: normal;
     text-align: center;
-    -webkit-text-stroke: 3px #111;
+    -webkit-text-stroke: .4rem #111;
     text-transform: uppercase;
 }
 
@@ -96,7 +96,7 @@ button{
 //------------------------------------------nav--------------------------------
 .nav{
     background-color:$color-primary;
-    padding: 2.7rem 9.7rem;
+    padding: 2.7rem 9rem;
     &__container{
        display: flex;
        justify-content: space-between;
@@ -110,7 +110,7 @@ button{
         display: flex;
         justify-content: space-between;
         >:not(:last-child){
-            margin-right: 7.6rem;
+            margin-right: 5rem;
         }
     }
     &__item{
@@ -136,6 +136,37 @@ button{
     }
     &__heading{
         margin: 9.1rem 10rem;
+        position: relative;
+        text-shadow: 1rem 1rem $color-primary;
+    }
+    &__triangle::after{
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-bottom: 16rem solid $color-yellow; 
+        border-left: 8rem solid transparent; 
+        border-right: 8rem solid transparent; 
+        position:absolute;
+    }
+    &__bubble{
+        color: $color-primary;
+        font-style: italic;
+        padding:3rem 8.2rem 3rem 5rem;
+        background:$color-blue;
+        position:relative;
+        border-radius:20%;
+        -moz-boder-radius:20%;
+        -webkit-border-radius:20%;
+    }
+    &__bubble::after{
+        content:'';
+        position:absolute;
+        width:0;
+        height:0;
+        border-top:20px  solid  $color-blue;
+        border-right:20px  solid  transparent;
+        top:50px;
+        right:80%
     }
     &__nav{
         display: flex;
@@ -242,8 +273,8 @@ button{
         &--desc{
             position: absolute;
             bottom: -4rem;
-            left: 7rem;
-            right: 7rem;
+            left: 6rem;
+            right: 6rem;
             display: flex;
             align-items: center;
             padding: .7rem .8rem .6rem 2.7rem;
@@ -254,7 +285,7 @@ button{
                 height:6.5rem;
             }
             >p{
-                font-size:2rem;
+                font-size:1.8rem;
                 font-weight: 800;
                 color: $color-primary;
                 margin-right: 2rem;
@@ -315,7 +346,9 @@ button{
         margin-top: 2.9rem;
         margin-bottom: 2.9rem;
     }
-
+    &__img{
+        max-height: 21rem;
+    }
     &__bottom{
         display: flex;
         justify-content:space-between;
@@ -349,6 +382,7 @@ button{
     background: $color-blue;
     padding-top: 15rem;
     padding-bottom:17rem;
+    position: relative;
     &__heading{
         color: $color-yellow;
         text-align: center;
@@ -367,14 +401,15 @@ button{
 
     }
     &__main{
-        width: 123.5rem;
+        width: 110rem;
         margin: 0 auto;
         display: flex;
         justify-content:center;
-      
+        position: relative;
+        z-index: 99;
         >div{
             width: 50%;
-            height: 41.8rem;
+            height: 37.5rem;
         }
         &--right{
             color: $color-primary;
@@ -389,8 +424,8 @@ button{
             font-style: normal;
             line-height: 2.4;
             letter-spacing: normal;
-            margin-top: 3.5rem;
-            margin-bottom: 3rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
 
         }
         &--desc{
@@ -402,10 +437,65 @@ button{
             letter-spacing: normal;
             text-align: left;
             color: #222;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         &--button{
             margin-bottom: 7.5rem;
+        }
+    }
+    &__object{
+        &--1{
+            width: 18rem;
+            height:20rem;
+            position:absolute;
+            top: 20rem;
+            left: 14rem;
+ 
+        }
+        &--2{
+            width: 14.7rem;
+            height:13.4rem;
+            position:absolute;
+            top: 6rem;
+            right: 20rem;
+        }
+        &--3{
+            width: 14.7rem;
+            height:18.6rem;
+            position:absolute;
+            top: 9rem;
+            right: 14rem;
+            z-index: 10;
+        }
+        &--4{
+            width: 28rem;
+            height:45rem;
+            position:absolute;
+            top: 19rem;
+            right: -10rem;
+   
+        }
+        &--5{
+            width: 21rem;
+            height:15rem;
+            position:absolute;
+            top: 58rem;
+            right: 0rem;
+            z-index: 10;
+        }
+        &--6{
+            width: 14rem;
+            height:33rem;
+            position:absolute;
+            left: 0;
+            top: 41rem;
+        }
+        &--7{
+            width: 10rem;
+            height:15rem;
+            left: 14rem;
+            bottom: 20rem;
+            position:absolute;
         }
     }
 }
@@ -416,6 +506,7 @@ button{
     color: $color-primary;
     padding: 16rem 0rem 14rem 0rem;
     text-align: center;
+    position: relative;
     &__heading{
         margin-bottom: 4rem;
         font-weight: bold;
@@ -431,6 +522,7 @@ button{
         display: flex;
     }
     &__item{
+        position: relative;
         text-transform: uppercase;
         &--big--heading{
             margin-top: 3rem;
@@ -461,6 +553,46 @@ button{
         }
 
     }
+    &__object{
+        &--1{
+            position: absolute;
+            width: 9.5rem;
+            height: 9.5rem;
+            top:4.3rem;
+            right:7rem;
+        }
+        &--2{
+            position: absolute;
+            width: 12rem;
+            height: 11rem;
+            top:16rem;
+            right:7rem;
+        }
+        &--3{
+            position: absolute;
+            z-index: 99;
+            width: 14rem;
+            height: 14rem;
+            bottom:-9rem;
+            right:-1rem;
+        }
+        &--4{
+            position: absolute;
+            z-index: 99;
+            width: 10rem;
+            height: 5rem;
+            top:-2.7rem;
+            left:2rem;
+        }
+        &--5{
+            position: absolute;
+            z-index: 99;
+            width: 12rem;
+            height: 9rem;
+            bottom: -5rem;
+            left:-8rem;
+        }
+    }
 }
 
 .orange{
@@ -474,6 +606,7 @@ button{
     text-align: center;
     color: $color-primary;
     padding: 14.8rem 0 40rem 0 ;
+    position: relative;
     &__heading{
         margin-bottom: 5rem;
     }
@@ -490,7 +623,78 @@ button{
         margin-bottom: 7.2rem;
     }
     &__img{
-        width: 125.1rem;
+        width: 110rem;
+    }
+    &__object{
+        &--1{
+                position: absolute;
+                width: 40rem;
+                height: 20rem;
+                z-index: 99;
+                left: 23rem;
+                bottom: 14.6rem;
+        }
+        &--2{
+            position: absolute;
+            width: 9rem;
+            height: 8rem;
+            right: 50rem;
+            bottom: 27rem;
+        }
+        &--3{
+            position: absolute;
+            width: 14rem;
+            height: 14rem;
+            z-index: -1;
+            left: 13rem;
+            bottom: 30rem;
+        }
+        &--4{
+            position: absolute;
+            width: 40rem;
+            height: 35rem;
+            left: -22rem;
+            top: 31rem;
+        }
+        &--5{
+            position: absolute;
+            width: 14rem;
+            height: 11rem;
+            left: 22rem;
+            top: 0rem;
+            z-index: -1;
+        }
+        &--6{
+            width: 13rem;
+            height: 13rem;
+            position: absolute;
+            top: 27rem;
+            right: 24rem;
+            z-index: 99;
+        }
+        &--7{
+            width: 15rem;
+            height: 15rem;
+            position: absolute;
+            top: 15rem;
+            right: 13rem;
+        }
+        &--8{
+            width: 40rem;
+            height: 40rem;
+            position: absolute;
+         bottom: 24rem;
+            right: -13rem;
+            z-index: -1;
+        }
+        &--9{
+            width: 30rem;
+            height: 37rem;
+            position: absolute;
+         bottom: 53rem;
+            right: -15rem;
+            z-index: -2;
+        }
     }
 }
 //------------------------------------------footer--------------------------------

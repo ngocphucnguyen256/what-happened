@@ -1,5 +1,12 @@
 import window from '../assets/img.png'
 import SeeMoreBtn from './SeeMoreBtn'
+import object1 from '../assets/object-01.png'
+import object2 from '../assets/object-02.png'
+import object3 from '../assets/object-03.png'
+import object4 from '../assets/object-04.png'
+import object5 from '../assets/object-05.png'
+import object6 from '../assets/object-06.png'
+import object7 from '../assets/object-07.png'
 const Story =()=>{
 
 
@@ -30,6 +37,13 @@ const Story =()=>{
                     </div>
                 </div>
             </div>
+            <img src={object1} alt="object" className="story__object--1"/>
+            <img src={object2} alt="object" className="story__object--2"/>
+            <img src={object3} alt="object" className="story__object--3"/>
+            <img src={object4} alt="object" className="story__object--4"/>
+            <img src={object5} alt="object" className="story__object--5"/>
+            <img src={object6} alt="object" className="story__object--6"/>
+            <img src={object7} alt="object" className="story__object--7"/>
         </div>
     )
 }
