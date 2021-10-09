@@ -128,6 +128,7 @@ button {
 .header {
   background-color: #ea4913;
   padding: 12rem 0rem;
+  overflow: hidden;
 }
 
 .header__title {
@@ -172,6 +173,18 @@ button {
   border-right: 20px  solid  transparent;
   top: 50px;
   right: 80%;
+}
+
+.header__thirsties {
+  position: absolute;
+  font-size: 43.5px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 0.39;
+  letter-spacing: normal;
+  border: solid 3px #020001;
+  background-color: #0565bb;
 }
 
 .header__nav {
@@ -408,6 +421,7 @@ button {
   padding-top: 15rem;
   padding-bottom: 17rem;
   position: relative;
+  overflow: hidden;
 }
 
 .story__heading {
@@ -649,6 +663,7 @@ button {
 }
 
 .video {
+  overflow: hidden;
   text-align: center;
   color: #1A1A1A;
   padding: 14.8rem 0 40rem 0;
@@ -847,6 +862,10 @@ button {
 @media only screen and (max-width: 42em) {
   html {
     font-size: 25%;
+  }
+  .productlist__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
